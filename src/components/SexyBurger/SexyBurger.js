@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 const buttonWidth = '100px';
 const buttonHeight = '80px';
 const transition = '0.65s';
-const color = 'red';
+const color = undefined;
 const borderRadius = '5px';
 
 const SexyBurger = () => {
