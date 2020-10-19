@@ -23,6 +23,7 @@ export default SexyBurger;
 
 const Wrapper = styled.button`
   position: relative;
+  left: 100px;
   width: ${buttonWidth};
   height: ${buttonHeight};
   border: 0;
@@ -61,7 +62,7 @@ const MiddleRectangle = styled.span`
   left: 0;
   width: ${buttonWidth};
   height: 10px;
-  transform: translate(-50%)
+  transform: translateY(-50%)
     rotate(${({ isOpen }) => (isOpen ? '-45deg' : '0')});
 `;
 
