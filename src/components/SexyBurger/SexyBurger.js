@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 
-const buttonWidth = '100px';
-const buttonHeight = '80px';
+const buttonWidth = '25px';
+const buttonHeight = '20px';
 const transition = '0.65s';
 const color = undefined;
 const borderRadius = '5px';
@@ -40,8 +40,8 @@ const sharedAll = css`
 `;
 
 const sharedSmall = css`
-  width: 50px;
-  height: 10px;
+  width: 12.5px;
+  height: 2.5px;
 `;
 
 const TopRectangle = styled.span`
@@ -53,7 +53,7 @@ const TopRectangle = styled.span`
       : 'transform: translate(0,0) rotate(0);'};
   top: 0;
   left: 0;
-  transform-origin: 0% 0%;
+  transform-origin: -100% 0%;
 `;
 
 const MiddleRectangle = styled.span`
@@ -61,7 +61,7 @@ const MiddleRectangle = styled.span`
   top: 50%;
   left: 0;
   width: ${buttonWidth};
-  height: 10px;
+  height: 2.5px;
   transform: translateY(-50%)
     rotate(${({ isOpen }) => (isOpen ? '-45deg' : '0')});
 `;
@@ -75,7 +75,7 @@ const BottomRectangle = styled.span`
       : 'transform: translate(0,0) rotate(0);'};
   bottom: 0;
   right: 0;
-  transform-origin: 100% 100%;
+  transform-origin: 200% 100%;
 `;
 
 const Box = styled.span`
